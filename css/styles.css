@@ -15,7 +15,9 @@ body {
 
 /* Header CSS */
 
-
+header .navbar {
+    background-color: var(--main-bg-color);
+}
 
 
 
