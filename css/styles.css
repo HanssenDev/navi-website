@@ -27,6 +27,10 @@ h2 {
     color: inherit;
 }
 
+img {
+    width: 100%;
+}
+
 /* --- Header CSS --- */
 
 header .navbar {
@@ -51,22 +55,45 @@ header .navbar {
 
 /* How it works */
 
+.how-it-works {
+    margin-bottom: 2rem;
+}
+
 .how-it-works--container {
-    max-width: 350px;
+    max-width: 320px;
     margin: 50px auto;
 }
 
-.how-it-works--image {
-    width: 350px;
-}
-
-.how-it-works--description {
+.how-it-works--description,
+.feature-description {
     text-align: center;
     margin-top: 30px;
 }
 
 /* Features */
 
-#features {
+.features {
     background-color: var(--secondary-bg-color);
+}
+
+.features .carousel {
+    width: 20rem;
+    margin: 30px auto;
+}
+
+.features h2 {
+    padding-top: 2rem;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: 2px;
+    color: #212529;
+}
+
+.carousel-indicators {
+    position: relative;
+    top: 220px;
 }
