@@ -1,4 +1,4 @@
-/* CSS Variables */
+/* --- CSS Variables --- */
 
 :root {
     --main-bg-color: #0077b6;
@@ -6,7 +6,7 @@
 
 }
 
-/* Global CSS */
+/* --- Global CSS --- */
 
 body {
     font-family: ;
@@ -16,13 +16,51 @@ h2 {
     text-align: center;
 }
 
+.button--container {
+    width:  240px;
+}
 
-/* Header CSS */
+.button--container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- Header CSS --- */
 
 header .navbar {
     background-color: var(--main-bg-color);
 }
 
+.title {
+    text-align: center;
+}
 
+.title h1 {
+    margin-bottom: 50px;
+}
 
-/* Main CSS */
+.phone-images,
+.title,
+.button--container {
+    margin: 60px auto;
+}
+
+/* --- Main CSS --- */
+
+/* How it works */
+
+.how-it-works--container {
+    max-width: 350px;
+    margin: 50px auto;
+}
+
+.how-it-works--image {
+    width: 350px;
+}
+
+.how-it-works--description {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Core Features */
