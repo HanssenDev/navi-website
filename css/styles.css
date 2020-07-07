@@ -3,14 +3,14 @@
 :root {
     --main-bg-color: #0077b6;
     --secondary-bg-color: #e9ecef;
-    --main-text-color: #fff;
-
+    --main-text-color: #212529;
+    --secondary-text-color: #fff;
 }
 
 /* --- Global CSS --- */
 
 body {
-    font-family: ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h2 {
@@ -31,6 +31,13 @@ img {
     width: 100%;
 }
 
+.back-to-top {
+    text-align: center;
+    position: relative;
+    top: 12px;
+    font-size: 2rem;
+}
+
 /* --- Header CSS --- */
 
 header .navbar {
@@ -44,30 +51,31 @@ header .navbar {
 }
 
 .title h1 {
-    margin: 0 auto 2rem;
+    margin: 0 auto 3rem;
+    position: relative;
+    right: 1.2rem;
 }
 
-/* .button--container {
-    margin: 50px auto;
-} */
 
 /* --- Main CSS --- */
 
 /* How it works */
 
-.how-it-works {
+.how-it-works,
+.why-navi {
     margin-bottom: 2rem;
 }
 
 .how-it-works--container {
-    max-width: 320px;
+    max-width: 20rem;
     margin: 50px auto;
 }
 
 .how-it-works--description,
-.feature-description {
+.feature-description,
+.why-navi p {
     text-align: center;
-    margin-top: 30px;
+    margin: 30px 15px 0;
 }
 
 /* Features */
@@ -90,10 +98,44 @@ header .navbar {
     left: auto;
     right: auto;
     top: 2px;
-    color: #212529;
+    color: var(--main-text-color);
 }
 
 .carousel-indicators {
     position: relative;
     top: 220px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    bottom: 80px;
+}
+
+/* Why Navi? */
+
+
+
+
+/* --- Footer --- */
+
+.footer {
+    background-color: var(--main-bg-color);
+    height: 8rem;
+}
+
+.footer * {
+    color: var(--secondary-text-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    padding-inline-start: 0;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.footer li {
+    padding: 10px;
 }
