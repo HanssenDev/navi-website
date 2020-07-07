@@ -13,18 +13,14 @@ body {
   font-family: "Montserrat", Arial, sans-serif;
 } 
 
-h1 {
-    font-size: 3rem;
-    line-height: 1.5;
-}
-
 h2 {
   text-align: center;
+  margin: 3rem auto 2rem;
 }
 
 .button--container {
   width: 240px;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
 .button--container a {
@@ -43,10 +39,31 @@ img {
   font-size: 2rem;
 }
 
+.btn {
+    width: 250px;
+    margin-bottom: 1rem;
+    background-color: #ffab00;
+    border: #ffab00;
+    color: #fff;
+}
+
 /* --- Header CSS --- */
 
 header .navbar {
   background-color: var(--main-bg-color);
+}
+
+#download {
+    background-image: url("/images/travel-people.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.overlay {
+    background-color: rgba(3, 168, 255, .25);
+    min-height: 100vh;
 }
 
 .title {
@@ -57,12 +74,15 @@ header .navbar {
 
 .title h1 {
   margin: 0 auto 3rem;
-  position: relative;
-  right: 1.2rem;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+  letter-spacing: 7px;
 }
 
 .tagline {
     font-size: 1.3rem;
+    font-weight: bold;
 }
 
 /* --- Main CSS --- */
@@ -124,7 +144,7 @@ header .navbar {
 /* --- Footer --- */
 
 .footer {
-  background-color: var(--main-bg-color);
+  background-color: #122d3c;
   height: 8rem;
 }
 
@@ -143,5 +163,5 @@ header .navbar {
 }
 
 .footer li {
-  padding: 10px;
+  padding: 5px;
 }
