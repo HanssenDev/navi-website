@@ -122,13 +122,12 @@ header .navbar {
   margin: 0 auto 3rem;
   font-size: 3rem;
   line-height: 1.5;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 7px;
 }
 
 .tagline {
     font-size: 1.3rem;
-    font-weight: bold;
 }
 
 .fa-apple {
@@ -176,16 +175,33 @@ header .navbar {
 
 /* Why Navi? */
 
-@media all and (min-width: 48em) {
-  .why-navi .image-box {
-    margin-right: 2rem;
-  }
-  
-  .why-navi p {
-    text-align: left;
-    margin-top: 0;
-  }
+.why-navi p {
+  padding-top: 1rem;
 }
+
+  @media all and (min-width: 48em) {
+    .why-navi .image-box {
+      margin-right: 2rem;
+    }
+    
+    .why-navi p {
+      text-align: left;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  @media all and (min-width: 62em) {
+    .why-navi p {
+      padding-top: 15%;
+    }
+  }
+
+  @media all and (min-width: 75em) {
+    .why-navi p {
+      padding-top: 25%;
+    }
+  }
 
 /* --- Footer --- */
 
