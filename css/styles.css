@@ -19,8 +19,7 @@ h2 {
 }
 
 .button--container {
-  width: 240px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .button--container a {
@@ -41,11 +40,19 @@ img {
 }
 
 .btn {
-    width: 240px;
+    width: 200px;
     margin-bottom: 1rem;
     background-color: #ffab00;
     border: #ffab00;
     color: #fff;
+}
+
+.fab {
+    font-size: 1.5rem;
+}
+
+.fa-apple {
+    margin-right: 7px;
 }
 
 /* --- Header CSS --- */
@@ -147,5 +154,6 @@ header .navbar {
 }
 
 .footer li {
-  padding: 5px;
+  padding: 5px 15px;
+  font-size: 1.5rem;
 }
