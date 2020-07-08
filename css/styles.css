@@ -41,18 +41,10 @@ img {
 
 .btn {
     width: 200px;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
     background-color: #ffab00;
     border: #ffab00;
     color: #fff;
-}
-
-.fab {
-    font-size: 1.5rem;
-}
-
-.fa-apple {
-    margin-right: 7px;
 }
 
 /* --- Header CSS --- */
@@ -91,6 +83,10 @@ header .navbar {
 .tagline {
     font-size: 1.3rem;
     font-weight: bold;
+}
+
+.fa-apple {
+  margin-right: 4px;
 }
 
 /* --- Main CSS --- */
@@ -156,4 +152,34 @@ header .navbar {
 .footer li {
   padding: 5px 15px;
   font-size: 1.5rem;
+}
+
+.fa-twitter,
+.fa-instagram,
+.fa-youtube,
+.fa-facebook {
+  transition: all ease .3s;
+}
+
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-youtube:hover,
+.fa-facebook:hover {
+  transform: scale(1.2);
+}
+
+.fa-twitter:hover {
+  color: #00aced;
+}
+
+.fa-instagram:hover {
+  color: #517fa4;
+}
+
+.fa-youtube:hover {
+  color: #bb0000;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
 }
