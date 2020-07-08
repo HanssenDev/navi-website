@@ -15,14 +15,27 @@ body {
 
 h2 {
   text-align: center;
-  margin: 3rem auto 2rem;
+  padding: 3rem 0;
+  font-weight: bold;
 }
 
-.button--container {
+h3 {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.button--box {
   text-align: center;
 }
+  @media all and (min-width: 62em) {
+    .hero-section .button--box {
+      margin: auto;
+      text-align: left;
+      padding-right: 10%;
+    }
+  }
 
-.button--container a {
+.button--box a {
   text-decoration: none;
   color: inherit;
 }
@@ -47,6 +60,12 @@ img {
     color: #fff;
 }
 
+.how-it-works,
+.features,
+.why-navi {
+  padding: 0 7% 5%;
+}
+
 /* --- Header CSS --- */
 
 header .navbar {
@@ -60,10 +79,24 @@ header .navbar {
     background-repeat: no-repeat;
     color: #fff;
 }
+  @media all and (min-width: 62em) {
+    #download {
+      background-position: 0 100%;
+    }
+  }
+  @media all and (min-width: 75em) {
+    #download {
+      background-position: 0 80%;
+    }
+  }
 
 .overlay {
     background-color: rgba(3, 168, 255, .25);
     min-height: 100vh;
+}
+
+.hero-section {
+  padding: 10%;
 }
 
 .title {
@@ -93,20 +126,8 @@ header .navbar {
 
 /* How it works */
 
-.how-it-works,
-.why-navi {
-  margin-bottom: 2rem;
-}
-
-.how-it-works--container,
-.features--container {
-  margin: 2rem auto;
-}
-
-.features--container img,
-.how-it-works--container img,
-.why-navi img {
-    margin-bottom: 1rem;
+.how-it-works--box {
+  padding-bottom: 2rem;
 }
 
 .how-it-works p,
@@ -122,11 +143,32 @@ header .navbar {
   background-color: var(--secondary-bg-color);
 }
 
-.features h2 {
-    padding-top: 2rem;
-  }
+.feature--box {
+  text-align: center;
+  padding: 12% 10%;
+}
+
+.feature--box .fas {
+  color: var(--main-bg-color);
+  margin-bottom: 2rem;
+}
+
+.feature--box .fas:hover {
+  color: #00b4d8;
+}
 
 /* Why Navi? */
+
+@media all and (min-width: 48em) {
+  .why-navi .image-box {
+    margin-right: 2rem;
+  }
+  
+  .why-navi p {
+    text-align: left;
+    margin-top: 0;
+  }
+}
 
 /* --- Footer --- */
 
@@ -157,7 +199,8 @@ header .navbar {
 .fa-twitter,
 .fa-instagram,
 .fa-youtube,
-.fa-facebook {
+.fa-facebook,
+.feature--box .fas {
   transition: all ease .3s;
 }
 
