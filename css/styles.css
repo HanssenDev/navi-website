@@ -7,7 +7,7 @@
   --secondary-text-color: #fff;
 }
 
-/* --- Global CSS --- */
+/* --- Global styles --- */
 
 body {
   font-family: "Montserrat", Arial, sans-serif;
@@ -29,18 +29,19 @@ h2 {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .back-to-top {
   text-align: center;
   position: relative;
-  top: 12px;
+  top: 13px;
   font-size: 2rem;
 }
 
 .btn {
-    width: 250px;
+    width: 240px;
     margin-bottom: 1rem;
     background-color: #ffab00;
     border: #ffab00;
@@ -94,16 +95,22 @@ header .navbar {
   margin-bottom: 2rem;
 }
 
-.how-it-works--container {
-  max-width: 22rem;
-  margin: 50px auto;
+.how-it-works--container,
+.features--container {
+  margin: 2rem auto;
 }
 
-.how-it-works--description,
-.feature-description,
+.features--container img,
+.how-it-works--container img,
+.why-navi img {
+    margin-bottom: 1rem;
+}
+
+.how-it-works p,
+.features p,
 .why-navi p {
   text-align: center;
-  margin: 30px 15px 0;
+  margin: 1rem auto 0;
 }
 
 /* Features */
@@ -112,32 +119,9 @@ header .navbar {
   background-color: var(--secondary-bg-color);
 }
 
-.features .carousel {
-  width: 20rem;
-  margin: 30px auto;
-}
-
 .features h2 {
-  padding-top: 2rem;
-}
-
-.carousel-caption {
-  position: relative;
-  left: auto;
-  right: auto;
-  top: 2px;
-  color: var(--main-text-color);
-}
-
-.carousel-indicators {
-  position: relative;
-  top: 220px;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-  bottom: 80px;
-}
+    padding-top: 2rem;
+  }
 
 /* Why Navi? */
 
