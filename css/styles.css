@@ -31,7 +31,7 @@ h3 {
     .hero-section .button--box {
       margin: auto;
       text-align: left;
-      padding-right: 10%;
+      padding-right: 20%;
     }
   }
 
@@ -71,6 +71,19 @@ img {
 header .navbar {
   background-color: var(--main-bg-color);
 }
+
+@media all and (min-width: 62em) {
+  .navbar-brand {
+    margin: 0 15% 0 20%;
+  }
+}
+
+@media all and (min-width: 62em) {
+  .navbar-nav {
+    margin-right: 5%;
+  }
+}
+
 
 #download {
     background-image: url("/images/travel-people.jpg");
@@ -155,6 +168,10 @@ header .navbar {
 
 .feature--box .fas:hover {
   color: #00b4d8;
+}
+
+.feature--box p {
+  padding: 0 18%;
 }
 
 /* Why Navi? */
