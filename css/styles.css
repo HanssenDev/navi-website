@@ -11,45 +11,25 @@
 
 body {
   font-family: "Montserrat", Arial, sans-serif;
+  text-align: center;
 }
 
 h2 {
-  text-align: center;
   padding: 3rem 0;
-  font-weight: bold;
 }
 
 h3 {
-  font-weight: bold;
   margin-bottom: 1.5rem;
 }
 
-.button--box {
-  text-align: center;
-}
-@media all and (min-width: 62em) {
-  .hero-section .button--box {
-    margin: auto;
-    text-align: left;
-    padding-right: 20%;
-  }
-}
-
-.button--box a {
-  text-decoration: none;
-  color: inherit;
+h2,
+h3 {
+  font-weight: bold;
 }
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-.back-to-top {
-  text-align: center;
-  position: relative;
-  top: 13px;
-  font-size: 2rem;
 }
 
 .btn {
@@ -68,22 +48,6 @@ img {
 
 /* --- Header CSS --- */
 
-header .navbar {
-  background-color: var(--main-bg-color);
-}
-
-@media all and (min-width: 62em) {
-  .navbar-brand {
-    margin: 0 15% 0 20%;
-  }
-}
-
-@media all and (min-width: 62em) {
-  .navbar-nav {
-    margin-right: 5%;
-  }
-}
-
 #download {
   background-image: url("/images/travel-people.jpg");
   background-size: cover;
@@ -91,16 +55,32 @@ header .navbar {
   background-repeat: no-repeat;
   color: #fff;
 }
-@media all and (min-width: 62em) {
-  #download {
-    background-position: 0 100%;
+  @media all and (min-width: 62em) {
+    #download {
+      background-position: 0 100%;
+    }
   }
-}
-@media all and (min-width: 75em) {
-  #download {
-    background-position: 0 80%;
+  @media all and (min-width: 75em) {
+    #download {
+      background-position: 0 80%;
+    }
   }
+
+.navbar {
+  background-color: var(--main-bg-color);
 }
+
+  @media all and (min-width: 62em) {
+    .navbar-brand {
+      margin: 0 15% 0 20%;
+    }
+  }
+
+  @media all and (min-width: 62em) {
+    .navbar-nav {
+      margin-right: 5%;
+    }
+  }
 
 .overlay {
   background-color: rgba(3, 168, 255, 0.25);
@@ -110,9 +90,14 @@ header .navbar {
 .hero-section {
   padding: 10%;
 }
+  @media all and (min-width: 62em) {
+    .hero-section .button--box {
+      margin: auto;
+      padding-right: 20%;
+    }
+  }
 
 .title {
-  text-align: center;
   padding: 2rem 0;
   margin: 4rem auto;
 }
@@ -130,7 +115,7 @@ header .navbar {
 }
 
 .fa-apple {
-  margin-right: 4px;
+  margin-right: 0.25rem;
 }
 
 /* --- Main CSS --- */
@@ -144,7 +129,6 @@ header .navbar {
 .how-it-works p,
 .features p,
 .why-navi p {
-  text-align: center;
   margin: 1rem auto 0;
 }
 
@@ -155,16 +139,15 @@ header .navbar {
 }
 
 .feature--box {
-  text-align: center;
   padding: 12% 10%;
 }
 
-.feature--box .fas {
+.feature-icon {
   color: var(--main-bg-color);
   margin-bottom: 2rem;
 }
 
-.feature--box .fas:hover {
+.feature-icon:hover {
   color: #00b4d8;
 }
 
@@ -176,33 +159,39 @@ header .navbar {
 
 .why-navi p {
   padding-top: 1rem;
+  text-align: left;
 }
 
-@media all and (min-width: 48em) {
-  .why-navi .image-box {
-    margin-right: 2rem;
+  @media all and (min-width: 48em) {
+    .why-navi .image-box {
+      margin-right: 2rem;
+    }
+
+    .why-navi p {
+      margin-top: 0;
+      padding-top: 0;
+    }
   }
 
-  .why-navi p {
-    text-align: left;
-    margin-top: 0;
-    padding-top: 0;
+  @media all and (min-width: 62em) {
+    .why-navi p {
+      padding-top: 15%;
+    }
   }
-}
 
-@media all and (min-width: 62em) {
-  .why-navi p {
-    padding-top: 15%;
+  @media all and (min-width: 75em) {
+    .why-navi p {
+      padding-top: 25%;
+    }
   }
-}
-
-@media all and (min-width: 75em) {
-  .why-navi p {
-    padding-top: 25%;
-  }
-}
 
 /* --- Footer --- */
+
+.back-to-top {
+  position: relative;
+  top: 13px;
+  font-size: 2rem;
+}
 
 .footer {
   background-color: #122d3c;
@@ -211,8 +200,6 @@ header .navbar {
 
 .footer * {
   color: var(--secondary-text-color);
-  text-align: center;
-  text-decoration: none;
 }
 
 .footer ul {
@@ -228,18 +215,12 @@ header .navbar {
   font-size: 1.5rem;
 }
 
-.fa-twitter,
-.fa-instagram,
-.fa-youtube,
-.fa-facebook,
-.feature--box .fas {
+.social-icon,
+.feature-icon {
   transition: all ease 0.3s;
 }
 
-.fa-twitter:hover,
-.fa-instagram:hover,
-.fa-youtube:hover,
-.fa-facebook:hover {
+.social-icon {
   transform: scale(1.2);
 }
 
